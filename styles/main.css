@@ -1,0 +1,119 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*
+.features p {
+    margin: 3% 8%;
+    text-align: justify;
+}
+/*
+.features ul {
+    margin: 3% 9%;    
+    font-size: 14px;
+    line-height: 20px;
+    list-style: disc;
+}
+*/
+
+#btn-Enviar{
+    color: #373867;
+    background-color: #F33413;
+}
+
+/*
+.button {
+    padding: 7px 0px;
+    display: block;
+    margin: 13px auto;
+    width: 80px;
+    background: #AACE9B;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 9px;
+    color: #373867;
+}
+*/
+
+
+.verificador p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 12px;
+    color: #F33413;
+    visibility: hidden;
+}
+
+
+.verificador.done p {
+    visibility: visible;
+}
+
+.verificador.done input {
+    color: #F33413;
+}
+
+#nombre {
+    margin-bottom: 5px;
+}
+
+#apellido {
+    margin-bottom: 5px;
+}
+
+#email {
+    margin-bottom: 5px;
+}
+
+#edad{
+    margin-bottom: 5px;
+}
+
+#sexo{
+    margin-bottom: 5px;
+}
+
+#mujer{
+    margin-bottom: 5px;
+}
+
+#hombre{
+    margin-bottom: 5px;
+}
+
+#otros{
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#send-message {
+    background: #AACE9B;
+}
+
+
+.header span {
+    display: none;
+    top: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.get-in-touch div {
+    margin: 10px;
+}
+
+
+
+

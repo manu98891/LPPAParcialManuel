@@ -1,0 +1,42 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #373867;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        text-align: justify;
+        border-bottom: 5px solid #373867;
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header, main, footer {
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        margin-right: 6%;
+        margin-left: 20%;
+    }
+
+
+    main > div, .why-trackgenix > div {
+        flex-direction: row;
+    }
+
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #sidebar {
+        display: inline;
+    }
+}

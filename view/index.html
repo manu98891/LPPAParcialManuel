@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer parcial</title>
+    <link href="../styles/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="../styles/header.css" rel="stylesheet" type="text/css">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../styles/footer.css" rel="stylesheet" type="text/css">
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+    <script src="../javascript/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Parcial LPPA Losada Manuel</h1>
+    </header>
+    <section id="sidebar">
+        <nav>
+            <ol>
+                <div class="menu-sidebar">
+                    <li class="menu-border">
+                        Informacion
+                    </li>
+                    <li>
+                        Manuel Eugenio Losada Clua
+                    </li>
+                    <li>
+                        Univercidad abierta interamericana
+                    </li>
+                    <li>
+                        Lenguajes de programacion para la administracion
+                    </li>
+                    <li>
+                        2022
+                    </li>
+                </div>
+            </ol>
+        </nav>
+    </section>
+    <main>
+        <h2>Registro</h2>
+        <form class="contact-js">
+            <div class="verificador">
+                <label for="nombre">
+                    Nombre:
+                </label>
+                <input id="nombre" type="name" placeholder="Esciba su nombre">
+                <p>
+                    Mensaje de Error
+                </p>
+            </div>
+            <div class="verificador">
+                <label for="apellido">
+                    Apellido:
+                </label>
+                <input id="apellido" type="name" placeholder="Escriba su apellido">
+                <p>
+                    Mensaje de Error
+                </p>
+            </div>
+            <div class="verificador">
+                <label for="email">
+                    Email
+                </label>
+                <input id="email" type="email" placeholder="Escriba su Email">
+                <p>
+                    Mensaje de Error
+                </p>
+            </div>
+            <div class="verificador">
+                <label for="edad">
+                    Edad:
+                </label>
+                <input id="edad" type="number" placeholder="Esciba su Edad">
+                <p>
+                    Mensaje de Error
+                </p>
+            </div>
+            <div class="verificador">
+                <label for="sexo">
+                    Sexo:
+                </label>
+                <div>
+                    <input id="mujer" type="radio" name="JTP">
+                    <label>Mujer</label>
+                </div>
+                <div>
+                    <input id="hombre" type="radio" name="JTP">
+                    <label>Hombre</label>
+                </div>
+                <div>
+                    <input id="otro" type="radio" name="JTP">
+                    <label>Otro</label>
+                </div>
+                <p>
+                    Mensaje de Error
+                </p>
+            </div>
+            <div class="verificador">
+                <label for="interes">
+                    Tema de interes:
+                </label>
+                <div>
+                    <input id="musica" type="checkbox" >
+                    <label>Musica</label>
+                </div>
+                <div>
+                    <input id="deporte" type="checkbox" >
+                    <label>Deporte</label>
+                </div>
+                <div>
+                    <input id="juegos" type="checkbox" >
+                    <label>Juegos</label>
+                </div>
+                <div>
+                    <input id="tecnologia" type="checkbox" >
+                    <label>Tecnologia</label>
+                </div>
+            </div>
+            <div class="paises">
+                <label for="pais">
+                    Pais:
+                </label>
+            </div>
+            <select name="paises" id="paises">
+                <option value="Argentina">
+                    Argentina
+                </option>
+                <option value="chile">
+                    Chile
+                </option>
+                <option value="brasil">
+                    Brasil
+                </option>
+                <option value="uruguay">
+                    Uruguay
+                </option>
+            </select>
+            <div>
+                Comentarios:
+            </div>
+            <div class="verificador">
+                <textarea cols="40" rows="8" id="comentarios" placeholder="Escriba un mensaje..."
+                    name="comentarios"></textarea>
+                <p>
+                    Mensaje de Error
+                </p>
+            </div>
+            <button type="submit" id="btn-Enviar">
+                Enviar
+            </button>
+        </form>
+
+        
+    </main>
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur </p>
+    </footer>
+</body>
+
+</html>

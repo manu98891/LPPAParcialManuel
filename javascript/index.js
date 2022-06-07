@@ -140,4 +140,53 @@ window.onload = function(){
         var container = input.parentElement;
         container.className = 'verification';
     };
+
+    //Radio boton
+    function checkButton() {  
+        if(document.getElementById('mujer').checked) { 
+            document.getElementById("disp").innerHTML 
+                = document.getElementById("mujer").value 
+                + " radio button is checked"; 
+        } 
+        else if(document.getElementById('hombre').checked) { 
+            document.getElementById("disp").innerHTML 
+                = document.getElementById("hombre").value 
+                + " radio button is checked";   
+        } 
+        else if(document.getElementById('otro').checked) { 
+            document.getElementById("disp").innerHTML 
+                = document.getElementById("otro").value 
+                + " radio button is checked";   
+        } 
+        else { 
+            document.getElementById("error").innerHTML 
+                = "No preciono ninguno"; 
+        } 
+    } 
+
+    sendButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        checkNombre();
+        checkApellido();
+        checkEmail();
+        checkMensaje();
+        checkButton();
+        if (checkNombre() == '' && checkApellido() == '' && checkEmail() == '' && checkMensaje()== '') {
+            alert('Message sent successfully! \n Name: '+ nombre.value + '\n Email: '+email.value+'\n Contact area: '+options.value+'\n Message: '+message.value);
+        } else {
+            alert('An error has ocurred. Please enter the data correctly.'+'\n'+checkNombre()+'\n'+checkEmail()+'\n'+ checkMessage()+'\n'+checkApellido());
+        }
+    });
+
+    resetButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        reset(nombre);
+        nombre.value='';
+        reset(apellido);
+        apellido.value='';
+        reset(email);
+        email.value='';
+        reset(message);
+        message.value='';
+    });
 }

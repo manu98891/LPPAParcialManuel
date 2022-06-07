@@ -79,4 +79,65 @@ window.onload = function(){
         };
     };
 
+    function checkNombre (){
+        if (checkInput(nombre)) {
+            return 'Nombre es imcompleto';
+        } else if (nombre.value.length < 3) {
+            showError(nombre,'Tiene que tener mas de 3 caracteres');
+            return 'Nombre muy caoto';
+        } else if (corroboration(nombre.value) || symbolCheck(nombre.value)) {
+            showError(nombre,'Porfavor insertar un formato valido');
+            return 'Formato invalido';
+        } else {
+            return '';
+        }
+    };
+
+    function checkApellido (){
+        if (checkInput(apellido)) {
+            return 'Apellido es imcompleto';
+        } else if (apellido.value.length < 3) {
+            showError(apellido,'Tiene que tener mas de 3 caracteres');
+            return 'Apellido muy caoto';
+        } else if (corroboration(apellido.value) || symbolCheck(apellido.value)) {
+            showError(apellido,'Porfavor insertar un formato valido');
+            return 'Formato invalido';
+        } else {
+            return '';
+        }
+    };
+
+    function checkEmail () {
+        if (checkInput(email)) {
+            return 'Email imcompleto';
+        } else if (!emailFormat.test(email.value)){
+            showError(email,'Insertra email valido');
+            return 'Formato del email invalido';
+        } else {
+            return '';
+        };
+    };
+
+    function checkMensaje(){
+        if(checkInput(message)){
+            return 'Campo mensaje incompleto';
+        } else if (message.value.length < 3){
+            showError(message,'Tiene que tener minimoo 3 caracteres');
+            return 'Demaciado corto el mendaje';
+        } else {
+            return '';
+        };
+    };
+
+    function showError (input,textError) {
+        var container = input.parentElement;
+        var text = container.querySelector('p');
+        text.textContent = textError;
+        container.className = 'verification done';
+    };
+
+    function reset (input) {
+        var container = input.parentElement;
+        container.className = 'verification';
+    };
 }
